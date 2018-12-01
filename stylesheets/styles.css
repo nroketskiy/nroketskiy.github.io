@@ -1,14 +1,23 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.5 Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
   font-weight:400;
 }
 
+.papertitle {
+    color:#393939;
+}
+
+.journaltitle {
+    font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
+    font-family: Nunito;
+    color:#222;
+    margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -21,17 +30,17 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2 {
   color:#393939;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3, h4, h5, h6 {
   color:#494949;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a {
@@ -192,6 +201,54 @@ footer {
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+img {
+    border-radius: 10px;
+    padding: 0px;
+  }
+
+button.accordion {
+cursor: pointer;
+padding: 0px;
+border: none;
+text-align: left;
+outline: none;
+font-size: 90%;
+transition: 0.3s;
+background-color: #f8f8f8;
+color: #777;
+}
+
+button.accordion:hover {
+background-color: #39c;
+color: #fff;
+}
+
+button.accordion:after {
+content: " [+] ";
+font-size: 100%;
+color:#777;
+float: left;
+margin-left: 1px;
+}
+
+button.accordion.active:after {
+content: " [-] ";
+}
+
+div.panel {
+padding: 10px;
+margin-top: 5px;
+display: none;
+font-size: 90%;
+overflow: hidden;
+background-color: #F1F1F1;
+color: #666;
+}
+
+div.panel.show {
+display: block !important;
 }
 
 @media print, screen and (max-width: 960px) {
