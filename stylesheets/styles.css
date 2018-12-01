@@ -205,7 +205,8 @@ footer {
 
 img {
     border-radius: 10px;
-    padding: 0px;
+    padding-bottom: 25px;
+}
   }
 
 button.accordion {
